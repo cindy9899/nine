@@ -51,7 +51,7 @@ const SearchP=styled.span`
 const Inputfield = styled.input`
     vertical-align: middle;
     width: 250px;
-    margin-right: 90px;
+    margin-right: 60px;
     border: 0;
 `
 const SearchBtn=styled.img`
@@ -60,7 +60,7 @@ const SearchBtn=styled.img`
     cursor: pointer;
 `
 const UserWrapper = styled.div`
-    width: 17%;
+    width: 18%;
     height: 60px;
     margin: 0;
 `

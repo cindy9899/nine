@@ -5,8 +5,8 @@ import Guide from "../Guide"
 import Header from "../Header"
 import Keyword from "../Keyword"
 
-const MainWrapper = styled.div`
-    width: 1300px;
+const ProperSizeWrapper = styled.div`
+    width: 1250px;
     height: auto;
     display: inline-block;
 `
@@ -15,12 +15,17 @@ const MainWrapper = styled.div`
 
 function Home() {
     return (
-        <MainWrapper>
+        <>
+        <ProperSizeWrapper>
             <Header />
             <Guide />
-            <Ads />
+        </ProperSizeWrapper>
+        <Ads />
+        <ProperSizeWrapper>
             <Keyword />
-        </MainWrapper>
+        </ProperSizeWrapper>
+        </>
+        
     )
 }
 

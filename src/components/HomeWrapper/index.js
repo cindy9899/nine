@@ -10,7 +10,8 @@ const HomeWrapperdiv = styled.div`
 `
 const Banner = styled.img`
     width: 100%;
-    height: auto;
+    height: 90px;
+    // height: auto;
 `
 function HomeWrapper() {
     return (

@@ -26,7 +26,7 @@ const Burger = styled.img`
 const GuideBtnWrapper = styled.div`
     width: 45%;
     height: 60px;
-    margin-right: 23%;
+    margin-right: 24%;
     align-items: center;
     display: flex;
 `
@@ -42,7 +42,7 @@ const GuideBtnSpan = styled.span`
 `
 
 const TownBtnWrapper = styled.div`
-    width: 25%;
+    width: 24%;
     height: 60px;
     align-items: center;
     display: flex;
