@@ -11,7 +11,7 @@ const Wrapper = styled.div`
     line-height: 23px;
 `
 
-const SignupField = styled.div`
+const SignupWrapper = styled.div`
     width: 30%;
     height: 100%;
     margin-right: 5%;
@@ -21,7 +21,7 @@ const SignupField = styled.div`
         color: #9c57f5;
     }
 `
-const LoginField = styled.div`
+const LoginWrapper = styled.div`
     width: 30%;
     height: 100%;
     margin-right: 5%;
@@ -31,7 +31,7 @@ const LoginField = styled.div`
         color: #9c57f5;
     }
 `
-const EnterpriseField = styled.div`
+const EnterpriseWrapper = styled.div`
     width: 30%;
     height: 100%;
     margin-top: 5px;
@@ -51,18 +51,18 @@ function UserService() {
     return (
         <>
             <Wrapper>
-                <SignupField>
-                    <BsPersonPlus fontSize={20}/>
+                <SignupWrapper>
+                    <BsPersonPlus fontSize={25}/>
                     <UserP>회원가입</UserP>
-                </SignupField>
-                <LoginField>
-                    <BsPersonCircle  fontSize={20}/>
+                </SignupWrapper>
+                <LoginWrapper>
+                    <BsPersonCircle  fontSize={25}/>
                     <UserP>로그인</UserP>
-                </LoginField>
-                <EnterpriseField>
-                    <BsBuilding  fontSize={20}/>
+                </LoginWrapper>
+                <EnterpriseWrapper>
+                    <BsBuilding  fontSize={25}/>
                     <UserP>기업서비스</UserP>
-                </EnterpriseField>
+                </EnterpriseWrapper>
             </Wrapper>
         </>
     )

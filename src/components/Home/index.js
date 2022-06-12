@@ -6,7 +6,7 @@ import Header from "../Header"
 import Keyword from "../Keyword"
 
 const MainWrapper = styled.div`
-    width: 1100px;
+    width: 1300px;
     height: auto;
     display: inline-block;
 `

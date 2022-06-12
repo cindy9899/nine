@@ -9,13 +9,15 @@ const HeaderWrapper = styled.div`
     height: auto;
     display: flex;
     margin: 0;
+    margin-bottom: 20px;
+    margin-top: 10px;
 `
 
 const LogoWrapper = styled.div`
-    width: 15%;
+    width: 13%;
     height: 60px;
     margin: 0;
-    line-height: 60px;
+    line-height: 55px;
 `
 const Logoimg = styled.img`
     width: 70%;
@@ -24,18 +26,18 @@ const Logoimg = styled.img`
     vertical-align: middle;
 `
 const SearchWrapper = styled.div`
-    width: 40%;
+    width: 35%;
     height: 60px;
-    margin-right: 25%;
+    margin-right: 35%;
     line-height: 60px;
 `
 const InputWrapper = styled.div`
     width: 100%;
-    height: 35px;
+    height: 40px;
     border: 2px solid transparent;
     margin-top: 10px;
-    line-height: 33px;
-    border-radius: 20px;
+    line-height: 37px;
+    border-radius: 25px;
     background: linear-gradient(to right, white, white), linear-gradient( 135deg, #9c57f5,#9babff);
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
@@ -49,7 +51,7 @@ const SearchP=styled.span`
 const Inputfield = styled.input`
     vertical-align: middle;
     width: 250px;
-    margin-right: 57px;
+    margin-right: 90px;
     border: 0;
 `
 const SearchBtn=styled.img`
@@ -58,10 +60,9 @@ const SearchBtn=styled.img`
     cursor: pointer;
 `
 const UserWrapper = styled.div`
-    width: 23%;
+    width: 17%;
     height: 60px;
     margin: 0;
-    
 `
 
 function Header() {
