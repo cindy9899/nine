@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.userIcon {
+  font-size: 5em;
+}
+@media (max-width: 991px) {
+  .userIcon {
+    font-size: 2em;
+  }
+}
+@media (max-width: 575px) {
+  .userIcon {
+    font-size: 1em;
+  }
+}
