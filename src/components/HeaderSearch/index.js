@@ -6,15 +6,14 @@ import UserService from "../UserService"
 
 
 const WholeWrapper = styled.div`
-    border: 1px solid red;
     height: auto;
     display: flex;
     @media (max-width: 991px) {
         width: 90vw;
-        margin: 1vh 0;
+        margin: 1vh 0 0 0;
     }
     width: 80vw;
-    margin: 2vh 0;
+    margin: 2vh 0 0 0;
     
 `
 // 로고
@@ -116,7 +115,7 @@ const UserServiceWrapper = styled.div`
 
 
 
-function Header() {
+function HeaderSearch() {
     return (
         <>
             <WholeWrapper>
@@ -138,4 +137,4 @@ function Header() {
     )
 }
 
-export default Header
+export default HeaderSearch

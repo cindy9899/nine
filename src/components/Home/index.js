@@ -2,7 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import Ads from "../Ads"
 import Guide from "../Guide"
-import Header from "../Header"
+import HeaderGuide from "../HeaderGuide"
+import HeaderSearch from "../HeaderSearch"
 import Keyword from "../Keyword"
 
 const WholeWrapper = styled.div`
@@ -10,14 +11,17 @@ const WholeWrapper = styled.div`
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 `
 
 function Home() {
     return (
         <>
             <WholeWrapper>
-                <Header />
+                <HeaderSearch />
+                <HeaderGuide />
+                <Guide />
             </WholeWrapper>
         </>
         
