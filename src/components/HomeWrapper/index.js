@@ -4,9 +4,8 @@ import Home from "../Home"
 import TopBanner from "../../data/image/top_banner.webp"
 
 const WholeWrapper = styled.div`
-    border: 1px solid red;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     margin: 0;
     padding: 0;
 `

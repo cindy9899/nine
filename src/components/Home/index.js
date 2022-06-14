@@ -22,6 +22,8 @@ function Home() {
                 <HeaderSearch />
                 <HeaderGuide />
                 <Guide />
+                <Ads />
+                <Keyword />
             </WholeWrapper>
         </>
         

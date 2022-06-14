@@ -21,7 +21,7 @@ const WholeWrapper = styled.div`
 //광고
 const AdSlideWrapper = styled.div`
     width: 25vw;
-    height: 46vh;
+    height: 25vw;
     margin-right: 2vh;
 `
 const AdSlideImg = styled.img`
@@ -31,7 +31,7 @@ const AdSlideImg = styled.img`
 //정보
 const MainInfoWrapper = styled.div`
     width: 33vw;
-    height: 42.5vh;
+    height: 23vw;
     margin-right: 2vh;
     padding: 1% 2%;
     background-color: #fff;
@@ -106,7 +106,7 @@ const MainInfoAd = styled.img`
 //인기순위
 const KeywordWrapper = styled.div`
     width: 17vw;
-    height: 43vh;
+    height: 23vw;
     padding: 1% 2%;
     background-color: #fff;
 `
@@ -116,20 +116,39 @@ const KeywordBody = styled.div`
     padding: 1vh 0;
 `
 const KeywordLine = styled.div`
-    line-height: 6em;
+@media(max-width:4800px){
+    line-height: calc(7em/1.2);
+}
+@media(max-width: 4340px){
+    line-height: calc(6em/1.3);
+}
+@media(max-width: 3530px){
+    line-height: calc(6em/1.4);
+}
+@media(max-width: 3150px){
+    line-height: calc(6em/1.6);
+}
+@media(max-width: 991px){
+    line-height: calc(6em/3)
+}
+    line-height: 7em;
     display: flex;
+
+@media(max-width: 3150px){
+    ${(props)=>props.none? `display: none`:""}
+}
 `
 const KeywordText = styled.span`
-@media(max-width:3800px){
-    font-size: calc(3em/1.3);
+@media(max-width:4880px){
+    font-size: calc(3.5em/1.2);
 }
-@media(max-width: 2950px){
+@media(max-width: 3530px){
     font-size: calc(3em/1.6)
 }
 @media(max-width: 991px){
     font-size: calc(3em/3)
 }
-    font-size: 3rem;
+    font-size: 3.5em;
     margin-left: 1vw;
     color: ${(props)=>props.fontColor || "#333333"};
     ${(props)=>props.click? `
@@ -202,11 +221,11 @@ function Guide() {
                         <KeywordLine><KeywordText fontColor="#bababa">3</KeywordText><KeywordText click>위험물산업기사</KeywordText></KeywordLine>
                         <KeywordLine><KeywordText fontColor="#bababa">4</KeywordText><KeywordText click>전기산업기사</KeywordText></KeywordLine>
                         <KeywordLine><KeywordText fontColor="#bababa">5</KeywordText><KeywordText click>건축기사</KeywordText></KeywordLine>
-                        <KeywordLine><KeywordText fontColor="#bababa">6</KeywordText><KeywordText click>건설안전기사</KeywordText></KeywordLine>
-                        <KeywordLine><KeywordText fontColor="#bababa">7</KeywordText><KeywordText click>소방설비기사(전기분야)</KeywordText></KeywordLine>
-                        <KeywordLine><KeywordText fontColor="#bababa">8</KeywordText><KeywordText click>제품디자인산업기사</KeywordText></KeywordLine>
-                        <KeywordLine><KeywordText fontColor="#bababa">9</KeywordText><KeywordText click>건설기계정비산업기사</KeywordText></KeywordLine>
-                        <KeywordLine><KeywordText fontColor="#bababa">10</KeywordText><KeywordText click>사출금형산업기사</KeywordText></KeywordLine>
+                        <KeywordLine none><KeywordText fontColor="#bababa">6</KeywordText><KeywordText click>건설안전기사</KeywordText></KeywordLine>
+                        <KeywordLine none><KeywordText fontColor="#bababa">7</KeywordText><KeywordText click>소방설비기사(전기분야)</KeywordText></KeywordLine>
+                        <KeywordLine none><KeywordText fontColor="#bababa">8</KeywordText><KeywordText click>제품디자인산업기사</KeywordText></KeywordLine>
+                        <KeywordLine none><KeywordText fontColor="#bababa">9</KeywordText><KeywordText click>건설기계정비산업기사</KeywordText></KeywordLine>
+                        <KeywordLine none><KeywordText fontColor="#bababa">10</KeywordText><KeywordText click>사출금형산업기사</KeywordText></KeywordLine>
                     </KeywordBody>
                 </KeywordWrapper>
             </WholeWrapper>

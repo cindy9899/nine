@@ -2,9 +2,9 @@ import React from "react"
 import styled from "styled-components"
 
 const KeywordWrapper = styled.div`
-    width: 100%;
-    height: auto;
-    // border: 1px solid blue;
+    width: 80%;
+    height: 20vw;
+    border: 1px solid red;
 `
 
 function Keyword() {
