@@ -20,18 +20,18 @@ const WholeWrapper = styled.div`
 
 //광고
 const AdSlideWrapper = styled.div`
-    width: 25vw;
-    height: 25vw;
+    width: 22vw;
+    height: 22vw;
     margin-right: 2vh;
 `
 const AdSlideImg = styled.img`
-    width: 25vw;
+    width: 22vw;
     height: 100%;
 `
 //정보
 const MainInfoWrapper = styled.div`
-    width: 33vw;
-    height: 23vw;
+    width: 30vw;
+    height: 20vw;
     margin-right: 2vh;
     padding: 1% 2%;
     background-color: #fff;
@@ -105,10 +105,11 @@ const MainInfoAd = styled.img`
 `
 //인기순위
 const KeywordWrapper = styled.div`
-    width: 17vw;
-    height: 23vw;
+    width: 15vw;
+    height: 20vw;
     padding: 1% 2%;
     background-color: #fff;
+    overflow: hidden;
 `
 const KeywordBody = styled.div`
     width: 100%;
@@ -117,7 +118,7 @@ const KeywordBody = styled.div`
 `
 const KeywordLine = styled.div`
 @media(max-width:4800px){
-    line-height: calc(7em/1.2);
+    line-height: calc(6em/1.2);
 }
 @media(max-width: 4340px){
     line-height: calc(6em/1.3);
@@ -131,7 +132,7 @@ const KeywordLine = styled.div`
 @media(max-width: 991px){
     line-height: calc(6em/3)
 }
-    line-height: 7em;
+    line-height: 6em;
     display: flex;
 
 @media(max-width: 3150px){

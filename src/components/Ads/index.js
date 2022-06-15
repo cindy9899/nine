@@ -14,7 +14,7 @@ import Ad5 from "../../data/image/MainBn_scroll_05.webp"
 import Ad6 from "../../data/image/MainBn_scroll_06.webp"
 
 const WholeWrapper = styled.div`
-    width: 80%;
+    width: 70%;
     display: flex;
     padding: 2vw 0;
 `

@@ -8,7 +8,7 @@ const WholeWrapper = styled.div`
     @media (max-width: 991px) {
         width: 90vw;
     }
-    width: 80vw;
+    width: 70vw;
 `
 //햄버거 버튼
 const BurgerWrapper = styled.div`

@@ -12,7 +12,7 @@ const WholeWrapper = styled.div`
         width: 90vw;
         margin: 1vh 0 0 0;
     }
-    width: 80vw;
+    width: 70vw;
     margin: 2vh 0 0 0;
     
 `
