@@ -20,6 +20,7 @@
 >/page   
 >  >/HomeWrapper - 홈화면의 전체적인 틀   
 >  >/Home - 홈화면 코드의 집합   
+
 >/components   
 >  >/Ads - 작은사이즈의 광고배터 파트   
 >  >/Guide - 광고/정보/인기순위 파트   
