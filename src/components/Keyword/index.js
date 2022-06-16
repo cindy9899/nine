@@ -10,8 +10,10 @@ import HotKeword_6 from "../../data/image/hotKeyword_06.webp"
 import HotKeword_7 from "../../data/image/hotKeyword_07.webp"
 import HotKeword_8 from "../../data/image/hotKeyword_08.webp"
 import { AiOutlinePlus } from "react-icons/ai"
+import { FaFire } from "react-icons/fa"
 
 const KeywordWrapper = styled.div`
+    width: 70%;
     height: 35vw;
 `
 const KeywordBox = styled.div`
@@ -112,7 +114,7 @@ const KeywordBoxBottomPlus = styled.div`
 `
 const BoxBottomTextBlock = styled.div`
 `
-const BoxBottomText = styled.span`
+const BoxText = styled.span`
     @media(max-width: 4500px){
         font-size: calc(${(props)=>props.fontSize} / 1.2);
     }
@@ -153,7 +155,7 @@ function Keyword() {
             const backgroundImg = backgroundArr[info.id]
             const backgroundLayer = layerArr[info.id]
             const abLocationColumn = (15+18*(i%4))+"vw"
-            const abLocationRow = (52+11*parseInt(i/4))+"vw"
+            const abLocationRow = (53+11*parseInt(i/4))+"vw"
 
             return(
                 <KeywordBox locationIdxColumn={abLocationColumn} locationIdxRow={abLocationRow}>
@@ -164,17 +166,17 @@ function Keyword() {
                         
                     </KeywordBoxTop>
                     <KeywordBoxBottom>
-                        <BoxBottomText fontSize="3em" fontColor="#6e6e6e">시행기관 : {info.licenseOrgan}</BoxBottomText>
-                        <BoxBottomText fontSize="2em" fontColor="#f15959">시행일 : {toDate}</BoxBottomText>
+                        <BoxText fontSize="3em" fontColor="#6e6e6e">시행기관 : {info.licenseOrgan}</BoxText>
+                        <BoxText fontSize="2em" fontColor="#f15959">시행일 : {toDate}</BoxText>
                     </KeywordBoxBottom>
                     <KeywordBoxBottomPlus>
                         <BoxBottomTextBlock>
-                            <BoxBottomText fontSize="3em" fontColor="#6e6e6e" bold>유형: </BoxBottomText>
-                            <BoxBottomText fontSize="3em" fontColor="#6e6e6e">제 464회</BoxBottomText>
+                            <BoxText fontSize="3em" fontColor="#6e6e6e" bold>유형: </BoxText>
+                            <BoxText fontSize="3em" fontColor="#6e6e6e">제 464회</BoxText>
                         </BoxBottomTextBlock>
                         <BoxBottomTextBlock>
-                            <BoxBottomText fontSize="3em" fontColor="#6e6e6e" bold>접수기간: </BoxBottomText>
-                            <BoxBottomText fontSize="3em" fontColor="#6e6e6e">2022-05-09 ~ 13</BoxBottomText>
+                            <BoxText fontSize="3em" fontColor="#6e6e6e" bold>접수기간: </BoxText>
+                            <BoxText fontSize="3em" fontColor="#6e6e6e">2022-05-09 ~ 13</BoxText>
                         </BoxBottomTextBlock>
                     </KeywordBoxBottomPlus>
                     <BoxBottomPlusBtn><AiOutlinePlus className="plus"/></BoxBottomPlusBtn>
@@ -185,6 +187,9 @@ function Keyword() {
     return (
         <>
             <KeywordWrapper>
+                <BoxText fontSize="6em" fontColor="#9c57f5" bold><FaFire />HOT</BoxText>
+                <BoxText fontSize="6em" bold>키워드</BoxText>
+                <BoxText fontSize="6em">TOP20</BoxText>
                 {DisplayData}
             </KeywordWrapper>
         </>
