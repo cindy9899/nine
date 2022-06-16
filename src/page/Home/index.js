@@ -1,13 +1,12 @@
 import React from "react"
 import styled from "styled-components"
-import Ads from "../Ads"
-import Guide from "../Guide"
-import HeaderGuide from "../HeaderGuide"
-import HeaderSearch from "../HeaderSearch"
-import Keyword from "../Keyword"
+import Ads from "../../components/Ads"
+import Guide from "../../components/Guide"
+import HeaderGuide from "../../components/Header/HeaderGuide"
+import HeaderSearch from "../../components/Header/HeaderSearch"
+import Keyword from "../../components/Keyword"
 
 const WholeWrapper = styled.div`
-    border: 1px solid red;
     width: 100%;
     height: auto;
     display: flex;

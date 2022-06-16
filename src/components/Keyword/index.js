@@ -21,6 +21,21 @@ const KeywordBox = styled.div`
     border: 1px solid #cdcdcd;
     border-radius: 1vw;
     background-color: #fff;
+    @media (max-width: 4990px){
+        top: calc(${(props)=>props.locationIdxRow} + 2vw);
+    }
+    @media (max-width: 4600px) {
+        top: calc(${(props)=>props.locationIdxRow} + 3vw);
+    }
+    @media (max-width: 3200px){
+        top: calc(${(props)=>props.locationIdxRow} + 7vw);
+    }
+    @media (max-width: 2850px) {
+        top: calc(${(props)=>props.locationIdxRow} + 9vw);
+    }
+    @media (max-width: 2420px) {
+        top: calc(${(props)=>props.locationIdxRow} + 12vw);
+    }
     left: ${(props)=>props.locationIdxColumn};
     top: ${(props)=>props.locationIdxRow};
     :hover{
@@ -29,6 +44,9 @@ const KeywordBox = styled.div`
         border: 1px solid #9c57f5;
     }
     overflow: hidden;
+    cursor: pointer;
+    
+    
 `
 
 //사진있는 곳
@@ -67,7 +85,7 @@ const KeywordBoxBottom = styled.div`
     height: 39%;
     display: flex;
     flex-direction: column;
-    line-height: 4em;
+    
     justify-content: center;
     padding: 0 1vw;
     ${KeywordBox}:hover & {
@@ -75,6 +93,13 @@ const KeywordBoxBottom = styled.div`
         height: 19%;
         border-bottom: 0.5px solid #cdcdcd;
     }
+    @media(max-width: 4500px){
+        line-height: 3em;
+    }
+    @media(max-width:3000px) {
+        line-height: 2em;
+    }
+    line-height: 4em;
 `
 const KeywordBoxBottomPlus = styled.div`
     width: 88%;
@@ -88,6 +113,15 @@ const KeywordBoxBottomPlus = styled.div`
 const BoxBottomTextBlock = styled.div`
 `
 const BoxBottomText = styled.span`
+    @media(max-width: 4500px){
+        font-size: calc(${(props)=>props.fontSize} / 1.2);
+    }
+    @media(max-width:3850px) {
+        font-size: calc(${(props)=>props.fontSize} / 1.4);
+    }
+    @media(max-width:3000px) {
+        font-size: calc(${(props)=>props.fontSize} / 1.6);
+    }
     font-size: ${(props)=>props.fontSize};
     color: ${(props)=>props.fontColor};
     font-weight: ${(props)=>props.bold? "900":""};
