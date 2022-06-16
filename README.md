@@ -20,18 +20,18 @@
 >/page   
 >  >/HomeWrapper - 홈화면의 전체적인 틀   
 >  >/Home - 홈화면 코드의 집합   
-/components   
-  /Ads - 작은사이즈의 광고배터 파트   
-  /Guide - 광고/정보/인기순위 파트   
-  /Header   
-    /FixedHeader - 스크롤이벤트시에 발생하는 고정헤더 파트   
-    /HeaderGuide - /*고정헤더에서의 재사용을 위하여 컴포넌트별로 나누어서 구현*/   
-      /Burger - 드롭다운 컨텐츠를 위한 햄버거바 이미지   
-      /GuideBar - Top100/자격증정보 등의 파트로 이동을 위한 가이드 파트   
-      /GuideTown - 우리동네학원/커뮤니티 등의 파트로 이동을 위한 가이드 파트   
-    /HeaderSearch - 통합검색을 하는 파트   
-    /UserService - 회원가입/로그인 등 사용자서비스를 위한 파트   
+>/components   
+>  >/Ads - 작은사이즈의 광고배터 파트   
+>  >/Guide - 광고/정보/인기순위 파트   
+>  >/Header   
+>  >  >/FixedHeader - 스크롤이벤트시에 발생하는 고정헤더 파트   
+>  >  >/HeaderGuide - /*고정헤더에서의 재사용을 위하여 컴포넌트별로 나누어서 구현*/   
+>  >  >  >/Burger - 드롭다운 컨텐츠를 위한 햄버거바 이미지   
+>  >  >  >/GuideBar - Top100/자격증정보 등의 파트로 이동을 위한 가이드 파트   
+>  >  >  >/GuideTown - 우리동네학원/커뮤니티 등의 파트로 이동을 위한 가이드 파트   
+>  >/HeaderSearch - 통합검색을 하는 파트   
+>  >/UserService - 회원가입/로그인 등 사용자서비스를 위한 파트   
        
- /data   
-   /image - 페이지 구현을 위한 이미지들을 저장   
-   /top20 - 과제에서 주어진 top20의 정보들을 저장   
+ >/data   
+   >/image - 페이지 구현을 위한 이미지들을 저장   
+   >/top20 - 과제에서 주어진 top20의 정보들을 저장   
