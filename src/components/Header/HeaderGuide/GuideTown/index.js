@@ -1,15 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-//우리동네학원/커뮤니티/자격증AI
-const GuideTownWrapper = styled.div`
-    width: 27%;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-`
+
 const GuideTownText = styled.span`
-@media (max-width:4336px){
+@media (max-width:4650px){
     font-size: 3em;
 }
 @media (max-width: 3400px){
@@ -29,11 +22,9 @@ const GuideTownText = styled.span`
 function GuideTown() {
     return(
         <>
-                <GuideTownWrapper>
                     <GuideTownText>우리동네학원</GuideTownText>
                     <GuideTownText>커뮤니티</GuideTownText>
                     <GuideTownText>자격증AI</GuideTownText>
-                </GuideTownWrapper>
         </>
     )
 }

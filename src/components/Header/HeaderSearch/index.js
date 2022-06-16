@@ -58,13 +58,13 @@ const SearchBar = styled.div`
     border: 0.8em solid transparent;
 `
 const SearchText = styled.span`
-@media (max-width: 2650px) {
+@media (max-width: 3000px) {
     font-size: 4em;
 }
-@media (max-width: 2200px) {
+@media (max-width: 2410px) {
     font-size: 3em;
 }
-@media (max-width: 1630px) {
+@media (max-width: 1830px) {
     font-size: 1em;
 }
 @media (max-width: 575px) { //모바일
@@ -77,13 +77,13 @@ const SearchText = styled.span`
 `
 const SearchInput = styled.input`
     border: none;
-    @media (max-width: 2650px) {
+    @media (max-width: 3000px) {
         font-size: 4em;
     }
-    @media (max-width: 2200px) {
+    @media (max-width: 2410px) {
         font-size: 3em;
     }
-    @media (max-width: 1630px) {
+    @media (max-width: 1830px) {
         font-size: 1em;
     }
     @media (max-width: 575px) {
@@ -92,6 +92,7 @@ const SearchInput = styled.input`
     width: 60%;
 
     font-size: 5em;
+    outline: none;
 `
 const SearchBtn = styled.img`
     @media (max-width: 991px) {
@@ -107,7 +108,7 @@ const SearchBtn = styled.img`
 
 // 유저서비스 이동
 const UserServiceWrapper = styled.div`
-    width: 18%;
+    width: 20%;
     height: 100%;
     margin-left: auto;
 `

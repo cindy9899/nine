@@ -40,7 +40,7 @@ const KeywordBox = styled.div`
     top: ${(props)=>props.locationIdxRow};
     :hover{
         height: 21vw;
-        z-index: 9999;
+        z-index: 5000;
         border: 1px solid #9c57f5;
     }
     overflow: hidden;
