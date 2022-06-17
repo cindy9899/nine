@@ -52,13 +52,14 @@ const KeywordBox = styled.div`
 `
 
 //사진있는 곳
-const KeywordBoxTop = styled.div` 
+const KeywordBoxTop = styled.div`
     width: 100%;
     height: 60%;
     overflow: hidden;
     ${KeywordBox}:hover & {
         height: 28.5%;
     }
+    position: relative;
 `
 const BoxTopImg = styled.img`
     width: 100%;
@@ -66,6 +67,33 @@ const BoxTopImg = styled.img`
     opacity: 0.4;
     ${KeywordBox}:hover & {
         opacity: 1;
+    }
+`
+
+const TextOnImage = styled.div`
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+`
+const TextOnImageDate = styled.div`
+    width: 95%;
+    height: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    ${KeywordBox}:hover & {
+        height: 100%;
+    }
+`
+const TextOnImageTitle = styled.div`
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    ${KeywordBox}:hover & {
+        height: 120%;
     }
 `
 const BoxTopImgLayer = styled.div`
@@ -127,7 +155,12 @@ const BoxText = styled.span`
     font-size: ${(props)=>props.fontSize};
     color: ${(props)=>props.fontColor};
     font-weight: ${(props)=>props.bold? "900":""};
+    background-color: ${(props)=>props.fontBackground};
+    padding: ${(props)=>props.fontPadding};
+    border-radius: ${(props)=>props.fontBorder};
+    margin: ${(props)=>props.fontMargin}
 `
+
 const BoxBottomPlusBtn = styled.div`
     width: 19%;
     height: 15%;
@@ -156,12 +189,28 @@ function Keyword() {
             const backgroundLayer = layerArr[info.id]
             const abLocationColumn = (15+18*(i%4))+"vw"
             const abLocationRow = (53+11*parseInt(i/4))+"vw"
+            const leftDate = Math.ceil((fromDate - new Date())/86400000)
+            const absLeftDate = Math.abs(leftDate)
 
             return(
                 <KeywordBox locationIdxColumn={abLocationColumn} locationIdxRow={abLocationRow}>
                     <KeywordBoxTop>
                         <BoxTopImgLayer layerColor={backgroundLayer}>
+                        <TextOnImage>
+                                    <TextOnImageDate>
+                                        {leftDate>0? 
+                                        <BoxText fontSize="2.5em" fontColor="#fff" fontBackground="#9c57f5" fontPadding="0.5em 0.7em" fontBorder="1em">D-{absLeftDate}</BoxText>
+                                         :
+                                         <BoxText fontSize="2.5em" fontColor="#fff" fontBackground="#9c57f5" fontPadding="0.5em 0.7em" fontBorder="1em">D+{absLeftDate}</BoxText>
+                                         }
+                                    </TextOnImageDate>
+                                    <TextOnImageTitle>
+                                        <BoxText fontSize="4em" fontColor="#fff" fontMargin="0 0 0 0.5em" bold>{info.title}</BoxText>
+                                    </TextOnImageTitle>
+                        </TextOnImage>
                             <BoxTopImg src={backgroundImg} />
+                                
+                                
                         </BoxTopImgLayer>
                         
                     </KeywordBoxTop>
