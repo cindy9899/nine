@@ -171,7 +171,7 @@ const KeywordText = styled.span`
 `
 
 function Guide() {
-    const AdsArr=[Ad1, Ad2, Ad3, Ad4]
+    const AdsArr=[Ad1, Ad2, Ad3, Ad4] //광고 이미지 배열선언
     const settings = {
         infinite: true,
         slidesToShow: 1,
@@ -183,7 +183,8 @@ function Guide() {
         <>
             <WholeWrapper>
             <AdSlideWrapper>
-                <Slider {...settings}>
+                {/* Ads Slider */}
+                <Slider {...settings}> 
                 {AdsArr.map(item=>{
                     return(
                         <div>
