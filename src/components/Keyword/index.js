@@ -23,19 +23,22 @@ const KeywordBox = styled.div`
     border: 1px solid #cdcdcd;
     border-radius: 1vw;
     background-color: #fff;
-    @media (max-width: 4990px){
+    @media (max-width: 5500px){
         top: calc(${(props)=>props.locationIdxRow} + 2vw);
     }
     @media (max-width: 4600px) {
         top: calc(${(props)=>props.locationIdxRow} + 3vw);
     }
-    @media (max-width: 3200px){
+    @media (max-width: 3785px) {
+        top: calc(${(props)=>props.locationIdxRow} + 5vw);
+    }
+    @media (max-width: 3400px){
         top: calc(${(props)=>props.locationIdxRow} + 7vw);
     }
-    @media (max-width: 2850px) {
+    @media (max-width: 2900px) {
         top: calc(${(props)=>props.locationIdxRow} + 9vw);
     }
-    @media (max-width: 2420px) {
+    @media (max-width: 2630px) {
         top: calc(${(props)=>props.locationIdxRow} + 12vw);
     }
     left: ${(props)=>props.locationIdxColumn};
@@ -188,7 +191,7 @@ function Keyword() {
             const backgroundImg = backgroundArr[info.id]
             const backgroundLayer = layerArr[info.id]
             const abLocationColumn = (15+18*(i%4))+"vw"
-            const abLocationRow = (53+11*parseInt(i/4))+"vw"
+            const abLocationRow = (54+11*parseInt(i/4))+"vw"
             const leftDate = Math.ceil((fromDate - new Date())/86400000)
             const absLeftDate = Math.abs(leftDate)
 

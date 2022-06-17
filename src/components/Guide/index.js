@@ -1,32 +1,41 @@
 import React from "react"
 import styled from "styled-components"
-import Ad from "../../data/image/ad1.webp"
+import Ad1 from "../../data/image/ad1.webp"
+import Ad2 from "../../data/image/ad2.webp"
+import Ad3 from "../../data/image/ad3.webp"
+import Ad4 from "../../data/image/ad4.webp"
 import { GrNext, GrPrevious } from "react-icons/gr"
 import  Crfc1 from "../../data/image/Crfc1.webp"
 import  Crfc2 from "../../data/image/Crfc2.webp"
 import  Crfc3 from "../../data/image/Crfc3.webp"
 import  Crfc4 from "../../data/image/Crfc4.webp"
 import infoAd from "../../data/image/infoad.webp"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const WholeWrapper = styled.div`
     width: 100vw;
-    height: auto;
+    height: 22vw;
     background: linear-gradient(to right, rgba(173,207,255,0.25) 0%,rgba(173,206,255,0.25) 1%,rgba(181,176,248,0.25) 50%,rgba(187,143,240,0.25) 100%);
     display: flex;
     padding: 7vh;
     justify-content: center;
     color: #333333;
+    overflow: hidden;
     `
 
 //광고
 const AdSlideWrapper = styled.div`
-    width: 22vw;
-    height: 22vw;
+    width: 25vw;
+    height: 25vw;
     margin-right: 2vh;
+    
 `
 const AdSlideImg = styled.img`
-    width: 22vw;
+    width: 25vw;
     height: 100%;
+    cursor: pointer;
 `
 //정보
 const MainInfoWrapper = styled.div`
@@ -162,12 +171,29 @@ const KeywordText = styled.span`
 `
 
 function Guide() {
+    const AdsArr=[Ad1, Ad2, Ad3, Ad4]
+    const settings = {
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+    }
     return (
         <>
             <WholeWrapper>
-                <AdSlideWrapper>
-                    <AdSlideImg src={Ad} />
+            <AdSlideWrapper>
+                <Slider {...settings}>
+                {AdsArr.map(item=>{
+                    return(
+                        <div>
+                                <AdSlideImg src={item} />
+                        </div>
+                    )
+                })}
+                </Slider>
                 </AdSlideWrapper>
+           
                 <MainInfoWrapper>
                     <InfoHeader>
                         <InfoText fontSize="4em" display="inline">자격증정보</InfoText>
